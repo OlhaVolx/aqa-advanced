@@ -1,9 +1,7 @@
-let numbers = [1,2,3,4,5,6,7,8,9,10]
-const number = 6;
-let index = 0; 
+const number = 5;
+let index = 1; 
 
-while (index <=9) {
-    let result = numbers[index]*number
-    console.log(`${number} * ${index+1} = ${result}`)
+while (index <= 10) {
+    console.log(`${number} * ${index} = ${number *(index)}`)
     index++;
 }
