@@ -1,9 +1,9 @@
 function divide (numerator, denominator){
     if (typeof numerator !== "number" || typeof denominator !== "number") {
-        throw new Error ("Аргумент не є числом");
+        throw new  TypeError ("Аргумент не є числом");
   }
    if ( denominator ===0){
-        throw new Error ("Ділити на нуль не можна")
+        throw new TypeError ("Ділити на нуль не можна")
     }
     return numerator/denominator;
 }
