@@ -26,3 +26,9 @@ if (oldestBook) {
     console.log("Найдавніша книга:");
     oldestBook.printInfo();
 }
+//завдання5: реалізація повернення нового об'єкту Наслідуванням
+const newEbookFromBook = EBook.fromBook(book1, "MOBI"); 
+newEbookFromBook.printInfo();
+
+const anotherEbookFromBook = EBook.fromBook(book2, "TXT"); 
+anotherEbookFromBook.printInfo();
