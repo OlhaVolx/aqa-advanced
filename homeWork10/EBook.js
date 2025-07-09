@@ -21,4 +21,7 @@ export class EBook extends Book {
         super.printInfo(); 
         console.log(`This book in ${this.fileFormat} format.`)
     }
+    static fromBook(book, fileFormat) {
+        return new EBook(book.name, book.author, book.year, fileFormat);
+    }
 }
