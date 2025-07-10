@@ -1,5 +1,5 @@
-function handleNum (num, evenCallback, oddCallback){
-    if (num % 2 === 0){
+function handleNum (num, evenCallback, oddCallback) {
+    if (num % 2 === 0) {
         evenCallback();
     }
     else {
@@ -8,11 +8,11 @@ function handleNum (num, evenCallback, oddCallback){
 }
 
 function handleEven (num) {
-    console.log("Number is even")
+    console.log("Number is even");
 
 }
 
 function handleOdd (num) {
-    console.log("Number is odd")
+    console.log("Number is odd");
 }
-handleNum (4, handleEven, handleOdd)
+handleNum (4, handleEven, handleOdd);
