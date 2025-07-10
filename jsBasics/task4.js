@@ -1,7 +1,7 @@
 console.log("Завдання 4.1");
 let radius = 20;
-const circleArea  = Math.PI * radius ** 2;
-console.log ("Circle Area = " + circleArea.toFixed(2));
+const circleArea = Math.PI * radius ** 2;
+console.log("Circle Area = " + circleArea.toFixed(2));
 
 console.log("Завдання 4.2");
 let length = 8.2;

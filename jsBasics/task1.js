@@ -6,10 +6,10 @@ var myAge;
 myAge = 28;
 console.log(myAge);
 
-const isAdult = true ;
+const isAdult = true;
 console.log(isAdult);
 
-let data = null ;
+let data = null;
 console.log(data);
 
 var familyStatus;
