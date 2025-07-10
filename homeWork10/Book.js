@@ -1,36 +1,36 @@
 export class Book {
-    constructor (name, author, year){
+    constructor (name, author, year) {
         this.name = name;
         this.author = author;
         this.year = year;
     }
-    get name(){
+    get name() {
         return this._name;
     }
-    set name (newName){
-        if (typeof newName !== 'string'|| newName.length === 0){
+    set name (newName) {
+        if (typeof newName !== "string"|| newName.length === 0) {
             console.log("Назва книги повинна бути рядком та мати від одного символа.");
             return;
         }
-         this._name = newName;
+        this._name = newName;
     }
 
     get author() {
         return this._author;
     }
     set author(newAuthor) {
-        if (typeof newAuthor !== 'string' || newAuthor.length === 0) {
+        if (typeof newAuthor !== "string" || newAuthor.length === 0) {
             console.log("Ім'я автора повинен бути рядком та мати від одного символа");
             return;
         }
         this._author = newAuthor;
     }
 
-     get year() {
+    get year() {
         return this._year;
     }
     set year(newYear) {
-        if (typeof newYear !== 'number') {
+        if (typeof newYear !== "number") {
             console.log("Рік має бути числом");
             return;
         }
@@ -38,7 +38,7 @@ export class Book {
     }
 
     printInfo () {
-        console.log(`The book ${this.name} was written by ${this.author} in ${this.year}`)
+        console.log(`The book ${this.name} was written by ${this.author} in ${this.year}`);
     }
 
     static findOldestBook(books) {
